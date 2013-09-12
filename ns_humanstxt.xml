@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension type="plugin" version="2.7.0" group="system" method="upgrade" client="site">
+	<name>System - NS HumansTXT</name>
+	<creationDate>20 Jul 2011</creationDate>
+	<author>Natural Selection Web Design LLC</author>
+	<license>Released under the GNU/GPL License</license>
+	<authorEmail>info@nsel.co</authorEmail>
+	<authorUrl>http://nsel.co</authorUrl>
+	<version>v3.0</version>
+	<description>NS HumansTXT inserts a link string into your sites header and adds a humans.txt file to your root directory. Remember to enable it in the Plugin Manager. If you use NS HumansTXT please leave a review on the Joomla! Extensions Directory.</description>
+
+	<files>
+		<filename plugin="ns_humanstxt">ns_humanstxt.php</filename>
+		<filename>humans.txt</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/system/ns_humanstxt/fields/">
+				<field type="logo" default="" />
+				<field type="spacera" default="" />
+				<field name="spacer1" type="spacer" hr="true" />
+				<field type="spacera" default="&lt;span style=&quot;font-family:arial;font-size:11px;&quot;&gt;Ensure you have updated the humans.txt file.&lt;/span&gt;" />
+				<field name="spacer2" type="spacer" hr="true" />
+				<field type="spacera" default="&lt;span style=&quot;font-family:arial;font-size:11px;&quot;&gt;Learn about the Humans.txt Initiative: &lt;/span&gt; &lt;a style=&quot;font-family:arial;color:#828627;&quot; target=&quot;blank&quot; href=&quot;http://www.humanstxt.org&quot;&gt;Here&lt;/a&gt;" />
+				<field name="spacer3" type="spacer" hr="true" />
+				<field type="spacera" default="&lt;div style=&quot;font-family:arial;font-size:10px;&quot;&gt;If you use NS HumansTXT, please post a rating and a review at the " />
+				<field type="spacera" default="Joomla! Extensions Directory:&lt;/span&gt; &lt;a style=&quot;font-family:arial;color:#828627;&quot; target=&quot;blank&quot; href=&quot;http://extensions.joomla.org/extensions/owner/NatSelection&quot;&gt;Here&lt;/a&gt;" />
+				<field name="spacer4" type="spacer" hr="true" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+
+
